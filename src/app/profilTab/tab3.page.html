@@ -1,0 +1,93 @@
+<ion-content>
+    <div class="header">
+        <div class="photo">
+                <ion-icon name="contact"></ion-icon>
+        </div>
+        <h2>Douglas Closset</h2>
+    </div>
+    <ion-item-group>
+    <ion-item-divider>
+        <ion-label>INFO</ion-label>
+    </ion-item-divider>
+    
+    <ion-item>
+            <ion-icon name="information-circle" size="large" slot="start"></ion-icon>
+        <ion-grid>
+                <ion-row>
+                    <ion-col>
+                            <div class="grey">Sexe</div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                        <ion-col>
+                                <div class="black">Femme</div>
+                        </ion-col>
+                </ion-row>
+        </ion-grid>
+    </ion-item>
+    <ion-item>
+            <ion-icon style="color: red" name="pin" size="large" slot="start"></ion-icon>
+        <ion-grid>
+                <ion-row>
+                    <ion-col>
+                            <div class="grey">Ville</div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                        <ion-col>
+                                <div class="black">Bruxelles</div>
+                        </ion-col>
+                </ion-row>
+        </ion-grid>
+    </ion-item>
+    <ion-item>
+            <ion-icon name="information-circle" size="large" slot="start"></ion-icon>
+        <ion-grid>
+                <ion-row>
+                    <ion-col>
+                            <div class="grey">Date d'inscription</div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                        <ion-col>
+                                <div class="black">Juin 2019</div>
+                        </ion-col>
+                </ion-row>
+        </ion-grid>
+    </ion-item>
+    </ion-item-group>
+    <ion-item-group>
+            <ion-item-divider>
+                <ion-label>Mes intérêts</ion-label>
+            </ion-item-divider>
+            
+            <div class="interest">
+                    <div *ngFor="let tag of tags" style="display: inline;">
+                            <div class="badge">{{tag}}</div>
+                       </div>
+            </div>
+            </ion-item-group>
+    
+            <ion-item-group>
+                    <ion-item-divider>
+                        <ion-label>Mes préférences culinaires</ion-label>
+                    </ion-item-divider>
+                    
+                    <div class="interest">
+                            <div *ngFor="let tag of preferences" style="display: inline;">
+                                    <div class="badge">{{tag}}</div>
+                               </div>
+                    </div>
+                    </ion-item-group>
+        <ion-item-group>
+                <ion-item-divider>
+                    <ion-label>Mes préférences</ion-label>
+                </ion-item-divider>
+                
+                <div class="interest">
+                        <div style="display: inline;">
+                                <div class="badge">Accès PMR</div>
+                            </div>
+                </div>
+                </ion-item-group>
+</ion-content>

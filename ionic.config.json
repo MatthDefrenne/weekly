@@ -1,5 +1,7 @@
 {
   "name": "Weekly",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,0 +1,41 @@
+<ion-content padding>
+    <h2>Où ?</h2>
+    <ion-list>
+        <ion-list-header>Commune</ion-list-header>
+        <ion-item lines="none" class="commune">
+          <ion-select [(ngModel)]="values" style="width: 100%">
+            <ion-select-option value="1000"> Bruxelles-Ville</ion-select-option>
+            <ion-select-option value="1030"> Schaerbeek</ion-select-option>
+            <ion-select-option value="1040"> Etterbeek</ion-select-option>
+            <ion-select-option value="1050"> Ixelles</ion-select-option>
+            <ion-select-option value="1060"> Saint-Gilles</ion-select-option>
+            <ion-select-option value="1070"> Anderlecht</ion-select-option>
+            <ion-select-option value="1080"> Molenbeek-St-Jean</ion-select-option>
+            <ion-select-option value="1081"> Koekelberg</ion-select-option>
+            <ion-select-option value="1082"> Berchem-Ste-Agathe</ion-select-option>
+            <ion-select-option value="1083"> Ganshoren</ion-select-option>
+            <ion-select-option value="1090"> Jette</ion-select-option>
+            <ion-select-option value="1140"> Evere</ion-select-option>
+            <ion-select-option value="1150"> Woluwé-St-Pierre</ion-select-option>
+            <ion-select-option value="1160"> Auderghem</ion-select-option>
+            <ion-select-option value="1170"> Watermael-Boitsfort</ion-select-option>
+            <ion-select-option value="1180"> Uccle</ion-select-option>
+            <ion-select-option value="1190"> Forest</ion-select-option>
+            <ion-select-option value="1200"> Woluwé-St-Lambert</ion-select-option>
+            <ion-select-option value="1210"> St Josse-ten-Noode</ion-select-option>          
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-list-header>Distance</ion-list-header>
+        <ion-item lines="none">
+            <ion-range min="0" max="50" color="light" pin="true">
+              <ion-label slot="start">0km</ion-label>
+              <ion-label slot="end">50km</ion-label>
+            </ion-range>
+          </ion-item>
+    </ion-list>
+    <div class="bottom-button" padding>
+        <ion-button expand="block" class="button-weekly" routerLink="/steps/step8">Suivant</ion-button>
+    </div>
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-content padding>
+    <h2>Quand ?</h2>
+    <ion-list>
+        <ion-list-header>Jour</ion-list-header>
+        <ion-item lines="none" class="commune">
+          <ion-select [(ngModel)]="dayPreSelected" style="width: 100%">
+            <ion-select-option *ngFor="let day of days; let i = index" value="{{i}}"> {{day}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-list-header>Heures</ion-list-header>
+        <ion-item lines="none" class="commune">
+          <ion-select [(ngModel)]="hoursPreSelected"  style="width: 100%">
+            <ion-select-option *ngFor="let info of hours; let arrayIndex = index" value="{{info.id}}"> {{info.hours}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    <div class="bottom-button" padding>
+        <ion-button expand="block" class="button-weekly" routerLink="/steps/step5">Suivant</ion-button>
+    </div>
+</ion-content>

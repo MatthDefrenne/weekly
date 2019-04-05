@@ -1,0 +1,62 @@
+ion-content{
+    --ion-background-color:white;
+}
+.header-md:after {
+    background-image: inherit;
+}
+h3 {
+    font-size: 18px;
+    margin-bottom: 10vh;
+}
+p {
+    color: #000000;
+}
+.grey {
+    color: #979797;
+
+}
+button {
+    background: none;
+    color: red;
+    font-size: 16Px;
+}
+.isActivated {
+    p {
+        margin: 10px 15px 8px 5px;
+    }
+    background: #E4F8EC;
+    border-radius: 5px;
+    color: black;
+    padding:  10px 15px 15px 10px;
+}
+.bottom-button {
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    right: 0;
+}
+.middle {
+    margin-top: 20vh;
+}
+    .type {
+        color: #4A90E2;
+        font-size: 12px;
+    }
+
+    .name {
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .badge {
+        background: #E9E9E9;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 12px;
+        color: #848484;
+    }
+    ion-header {
+        --ion-background-color: #60CC8B;
+        --ion-text-color: white;
+    }
